@@ -1,11 +1,5 @@
 # variable-monitor
-Variable-Monitor is a library to log program variables overtime. It saves all logged data into a standard format, that allows it to be easily visualized.
-
-## Features
-
-## Installation
-The package is going to published for npm soon.
-
+Variable-Monitor is a library that allows to log objects properties of various types (Variable, Array) overtime. Variable Monitor exports the logged data in a standardized format, that makes it easy to have it visualized by other visualization libraries.
 
 ## Usage
 
@@ -35,12 +29,12 @@ for(var i=0;i<100;i++){
 }
 ``` 
 
-##Adding Custom Loggers
-
-
+## Loggers
+So far, VariableMonitor is only able to log variables and arrays. More datatypes will be supported in the future.
 
 ## TODO List
 
 - [ ] Variable Watcher that automatically detects when variable is changed and logs the new value
 - [ ] Save to Disk/Database
-- [ ] 
+- [ ] Logger for Graph data
+- [ ] Logger
