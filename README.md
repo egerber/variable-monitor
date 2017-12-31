@@ -1,5 +1,5 @@
 # variable-monitor
-Variable-Monitor is a library that allows to log objects properties overtime. Variable Monitor exports the logged data in a standardized format, that makes it easy to have it visualized by other visualization libraries.
+Variable-Monitor is a library that allows to log objects properties over time. Variable Monitor exports the logged data in a standardized format, that makes it easy to have it visualized by other visualization libraries.
 
 ## Usage
 
