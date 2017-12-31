@@ -1,8 +1,9 @@
 # variable-monitor
-Variable-Monitor is a library that allows to log objects properties of various types (Variable, Array) overtime. Variable Monitor exports the logged data in a standardized format, that makes it easy to have it visualized by other visualization libraries.
+Variable-Monitor is a library that allows to log objects properties overtime. Variable Monitor exports the logged data in a standardized format, that makes it easy to have it visualized by other visualization libraries.
 
 ## Usage
 
+### Logging Objects
 ```javascript
 import {Monitor} from 'react-monitor-dashboard';
 
@@ -29,12 +30,36 @@ for(var i=0;i<100;i++){
 }
 ``` 
 
+### Retrieving Logged Data
+```javascript
+var dataset=monitor1.datset;
+```
+Returns an object of the type
+```javascript
+{
+  name: "monitor_name",
+  type: "Dataset",
+  data: [
+    {
+      name: "logged_arr_1",
+      type: "Array",
+      data: [
+        {t:1, id:1, value:12},
+        {t:1, id:2, value:166},
+        ...
+        ]
+     },
+     ...
+     ]
+}
+```
+
 ## Loggers
-So far, VariableMonitor is only able to log variables and arrays. More datatypes will be supported in the future.
+So far, variable-monitor is able to log only properties of the type "Number" as well as Arrays of numbers. More datatypes will be supported in the future.
 
 ## TODO List
 
 - [ ] Variable Watcher that automatically detects when variable is changed and logs the new value
 - [ ] Save to Disk/Database
 - [ ] Logger for Graph data
-- [ ] Logger
+- [ ] Logger for 
