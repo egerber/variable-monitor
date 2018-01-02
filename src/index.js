@@ -1,1 +1,3 @@
-export {default as Monitor} from './Monitor';
+import Monitor from './Monitor';
+
+export default Monitor;

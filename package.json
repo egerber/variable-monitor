@@ -1,6 +1,6 @@
 {
   "name": "variable-monitor",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Package for logging object properties over time",
   "repository": {
     "type": "git",
@@ -9,6 +9,7 @@
   "license": "MIT",
   "author": "Emanuel Gerber",
   "private": false,
+  "main": "src/index.js",
   "dependencies": {
     "react-scripts": "1.0.17"
   },
