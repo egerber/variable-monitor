@@ -1,19 +1,25 @@
 # variable-monitor
 Variable-Monitor is a library that allows to log objects properties overtime. Variable Monitor exports the logged data in a standardized format, that makes it easy to have it visualized by other visualization libraries.
 
+## Installation
+
+```
+npm install variable-monitor
+```
+
 ## Usage
 
 ### Logging Objects
 ```javascript
 import {Monitor} from 'react-monitor-dashboard';
 
-my_object={
+var my_object={
   var1: 12,
   arr1: [1,2,3],
   arr2: [14,5,111]
 };
 
-monitor1=new Monitor("monitor_my_object");
+var monitor1=new Monitor("monitor_my_object");
 //add new logger for property "var1" of object "my_object", log data at every time step"
 monitor1.add({name: "logger_variable_1", obj: my_object, prop: "var1", interval: 1});
 //add new logger for property "arr1" of object "my_object", log data every 2 time steps"

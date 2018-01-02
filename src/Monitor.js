@@ -52,6 +52,21 @@ export default class Monitor{
         //TODO
     }
 
+    get dataset(){
+
+        var data=[];
+
+        for(let logger of Object.values(this.data_loggers)){
+            data.push(logger.data);
+        }
+
+        return {
+            name: this.name,
+            type: "Dataset",
+            data: data
+        };
+    }
+
     [Symbol.iterator]() {
         
         var counter=0;
