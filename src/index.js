@@ -1,3 +1,3 @@
-import Monitor from './Monitor';
+var Monitor=require('./Monitor').default;
 
 export default Monitor;
